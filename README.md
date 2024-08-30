@@ -1,0 +1,1 @@
+# Aplikace-AI-pro-zpracovani-obrazu
