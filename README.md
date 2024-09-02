@@ -72,7 +72,7 @@ Zobrazuje využití místa v adresáři.
 **`ps`**  
 Zobrazuje seznam aktuálně běžících procesů.
 
-### Instalace některého softwaru
+### Instalace některého softwaru a zprovoznění
 
 #### Instalace Firefoxu 
 
@@ -103,3 +103,12 @@ Vlastní instalace balíku
 Nejprve zjistíme lokální IP adresu zařízení: `ip addr show` nebo `ifconfig` (na jetsonu)
 
 Pro připojení použijeme program*ssh* `ssh jetson@x.x.x.x` (na osobním počítači)
+Možno vyzkoušet forwardování X serveru, přepínač -X.
+
+#### Ověření funkčnosti kamery 
+
+viz https://www.waveshare.com/wiki/Jetson_Orin_Nano#Overview
+
+Pro jednu kameru spustíme následující příkaz:
+gst-launch-1.0 nvarguscamerasrc sensor-id=0 ! "video/x-raw(memory:NVMM), width=(int)1920, height=(int)1080,format=(string)NV12, framerate=(fraction)30/1" ! nvvidconv ! xvimagesink sync=false 
+
