@@ -17,6 +17,9 @@ Spustíme docker:
 Popis práce s dockery naleznete zde https://docs.docker.com/get-started/introduction/
 My budeme používat pouze vytvořené kontejnery.
 
+Abz se nám propsal adresář *Projects* do dockeru, budeme je spouštět následovně.
+'docker/run.sh --volume $HOME/Projects:/Projects'
+
 Výpis imagíí:
 
 'sudo docker images'
