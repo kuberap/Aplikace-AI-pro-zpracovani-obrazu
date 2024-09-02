@@ -110,5 +110,5 @@ Možno vyzkoušet forwardování X serveru, přepínač -X.
 viz https://www.waveshare.com/wiki/Jetson_Orin_Nano#Overview
 
 Pro jednu kameru spustíme následující příkaz:
-gst-launch-1.0 nvarguscamerasrc sensor-id=0 ! "video/x-raw(memory:NVMM), width=(int)1920, height=(int)1080,format=(string)NV12, framerate=(fraction)30/1" ! nvvidconv ! xvimagesink sync=false 
+`gst-launch-1.0 nvarguscamerasrc sensor-id=0 ! "video/x-raw(memory:NVMM), width=(int)1920, height=(int)1080,format=(string)NV12, framerate=(fraction)30/1" ! nvvidconv ! xvimagesink sync=false`
 
