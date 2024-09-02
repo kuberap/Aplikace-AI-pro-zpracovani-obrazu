@@ -20,3 +20,7 @@ My budeme používat pouze vytvořené kontejnery.
 Výpis imagíí:
 
 'sudo docker images'
+
+Smazání image, můžeme potřebovat, když si budeme hrát s jazykovým modlem:
+
+'sudo docker rmi IDIMAGE'
