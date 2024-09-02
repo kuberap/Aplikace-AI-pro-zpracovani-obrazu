@@ -18,6 +18,7 @@ Popis práce s dockery naleznete zde https://docs.docker.com/get-started/introdu
 My budeme používat pouze vytvořené kontejnery.
 
 Abz se nám propsal adresář *Projects* do dockeru, budeme je spouštět následovně.
+
 'docker/run.sh --volume $HOME/Projects:/Projects'
 
 Výpis imagíí:
